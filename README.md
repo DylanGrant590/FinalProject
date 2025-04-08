@@ -1,5 +1,5 @@
 Jamaica Bank of the West Indies – Java Console Banking System
-A simple, interactive Java console application simulating core banking operations such as creating accounts, depositing, withdrawing, and managing interest. Developed for learning, testing, or expanding into a more advanced system.
+A simple, interactive Java console application simulating core banking operations such as creating accounts, depositing, withdrawing, and managing interest. 
 
 Overview
 This application provides a menu-driven experience where users can:
@@ -33,16 +33,16 @@ Teller.java          // Entry point and main menu system
 BankAccount.java     // Logic for each bank account
 Bank.java            // Manages all accounts and interest functionality
 README.md            // Project documentation (this file)
-Features
+
 Feature	Description
-Account Creation	Users can create accounts with a unique name
-Account Access	Access existing accounts to perform transactions
-Deposit & Withdraw	Robust logic with error handling (e.g., negative deposits, insufficient funds)
+Account Creation: Users can create accounts with a unique name
+Account Access: Access existing accounts to perform transactions
+Deposit & Withdraw: Robust logic with error handling (e.g., negative deposits, insufficient funds)
 Interest Rate Support	Apply interest manually or automatically when balance ≥ $1000
-Total Assets Calculation	View total assets across all accounts
-Delete / ✏️ Edit Accounts	Delete accounts or update names
-Exception Handling	Handles common exceptions (InputMismatch, AccountNotFound, InsufficientResources)
-Getting Started
+Total Assets Calculation: View total assets across all accounts
+Delete Edit Accounts: Delete accounts or update names
+Exception Handling: Handles common exceptions (InputMismatch, AccountNotFound, InsufficientResources)
+
 Prerequisites
 Java JDK 8 or later
 
@@ -73,8 +73,6 @@ Please enter a number from the following menu:
 6) Exit.
 Submenu (after accessing an account):
 
-Copy
-Edit
 Please enter a number:
 1) Withdraw from an account
 2) Deposit to an account
@@ -82,7 +80,7 @@ Please enter a number:
 4) Choose interest rate
 5) Go back
 6) Exit
-7) 
+
 Known Issues & Bugs
 Interest listener methods (addInterestListener, removeInterestListener) may recurse or misfire due to confusion between Bank and CaretListener logic.
 
