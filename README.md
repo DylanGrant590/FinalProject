@@ -1,7 +1,7 @@
-🏦 Jamaica Bank of the West Indies – Java Console Banking System
+Jamaica Bank of the West Indies – Java Console Banking System
 A simple, interactive Java console application simulating core banking operations such as creating accounts, depositing, withdrawing, and managing interest. Developed for learning, testing, or expanding into a more advanced system.
 
-📌 Overview
+Overview
 This application provides a menu-driven experience where users can:
 
 Open or access accounts
@@ -24,25 +24,25 @@ Bank: Manages a list of accounts and related operations
 
 BankAccount: Represents individual bank accounts and handles transactions
 
-📁 Project Structure
+Project Structure
 plaintext
 Copy
 Edit
-📦 jamaica-bank
-├── Teller.java          // Entry point and main menu system
-├── BankAccount.java     // Logic for each bank account
-├── Bank.java            // Manages all accounts and interest functionality
-└── README.md            // Project documentation (this file)
-🔧 Features
+jamaica-bank
+Teller.java          // Entry point and main menu system
+BankAccount.java     // Logic for each bank account
+Bank.java            // Manages all accounts and interest functionality
+README.md            // Project documentation (this file)
+Features
 Feature	Description
-👤 Account Creation	Users can create accounts with a unique name
-🧾 Account Access	Access existing accounts to perform transactions
-💰 Deposit & Withdraw	Robust logic with error handling (e.g., negative deposits, insufficient funds)
-💹 Interest Rate Support	Apply interest manually or automatically when balance ≥ $1000
-📊 Total Assets Calculation	View total assets across all accounts
-❌ Delete / ✏️ Edit Accounts	Delete accounts or update names
-🧨 Exception Handling	Handles common exceptions (InputMismatch, AccountNotFound, InsufficientResources)
-🚀 Getting Started
+Account Creation	Users can create accounts with a unique name
+Account Access	Access existing accounts to perform transactions
+Deposit & Withdraw	Robust logic with error handling (e.g., negative deposits, insufficient funds)
+Interest Rate Support	Apply interest manually or automatically when balance ≥ $1000
+Total Assets Calculation	View total assets across all accounts
+Delete / ✏️ Edit Accounts	Delete accounts or update names
+Exception Handling	Handles common exceptions (InputMismatch, AccountNotFound, InsufficientResources)
+Getting Started
 Prerequisites
 Java JDK 8 or later
 
@@ -61,14 +61,6 @@ Edit
 javac Teller.java Bank.java BankAccount.java
 Run the application
 
-bash
-Copy
-Edit
-java Teller
-💬 Sample Interaction
-sql
-Copy
-Edit
 Welcome to Jamaica Bank of the West Indies!
 -------------------------------------------
 
@@ -81,7 +73,6 @@ Please enter a number from the following menu:
 6) Exit.
 Submenu (after accessing an account):
 
-vbnet
 Copy
 Edit
 Please enter a number:
@@ -91,7 +82,8 @@ Please enter a number:
 4) Choose interest rate
 5) Go back
 6) Exit
-⚠️ Known Issues & Bugs
+7) 
+Known Issues & Bugs
 Interest listener methods (addInterestListener, removeInterestListener) may recurse or misfire due to confusion between Bank and CaretListener logic.
 
 CaretListener interface is not required; UI references (e.g., CaretEvent) can be removed.
@@ -102,7 +94,7 @@ getTotalAssets() logic is flawed and doesn’t calculate actual total across acc
 
 Account identification is based only on name, which may not be unique.
 
-🛠 Suggested Improvements
+Suggested Improvements
 Replace account name with unique account ID (e.g., UUID)
 
 Add persistent storage (file or database)
@@ -115,7 +107,7 @@ Refactor to remove unused Swing/CaretListener components
 
 Use BigDecimal for accurate financial calculations
 
-📚 Technologies Used
+Technologies Used
 Java Standard Edition (JDK 8+)
 
 Java Collections (ArrayList, Iterator)
@@ -124,9 +116,9 @@ Java Exception Handling
 
 Console I/O (Scanner)
 
-🙌 Author
+Author
 Created by a passionate Java developer for educational and experimental purposes. Contributions and improvements are welcome!
 
-📝 License
+License
 This project is licensed under the MIT License. Feel free to use, modify, and share it.
 
